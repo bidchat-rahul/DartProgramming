@@ -5,6 +5,7 @@ import 'dart:convert';
 import 'dart:async';
 
 main(){
+  Stopwatch stopwatch = new Stopwatch()..start();
   // code to create and write to the file
   String path = "./CreatedTestFile.txt";
   var myFile = new File(path);
@@ -37,4 +38,10 @@ main(){
     // prints boolean
     print(isPresent);
   });
+
+  print('main() executed in ${stopwatch.elapsed}');
 }
+
+// Stopwatch stopwatch = new Stopwatch()..start();
+// doSomething();
+// print('doSomething() executed in ${stopwatch.elapsed}');
